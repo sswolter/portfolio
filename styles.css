@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  padding: 20px 0;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 30px;
+}
+
+p {
+  text-align: justify;
+}
+
+.pgblk {
+  min-height: 100vh;
+}
+
+.wrapper {
+  margin: 0 20px;
+}
+
+.content__container {
+  margin: 0 20px;
+}
+
+.icon {
+  max-height: 20px;
+  max-width: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.landing {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  height: 100%;
+}
+.landing__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.landing__nav > ul > li {
+  padding: 10px 0;
+}
+.landing__nav > ul > li > a {
+  text-decoration: none;
+}
+.landing__main {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 70px;
+}
+.landing__main__content--l {
+  font-size: 40px;
+}
+
+.project__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project__container__info {
+  margin: 10px 40px;
+}
+.project__container__info__links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.project__container__info__links > img {
+  max-height: 20px;
+  max-width: 20px;
+  padding: 10px;
+}
+
+.skills > p {
+  word-spacing: 7px;
+  line-height: 150%;
+  margin-bottom: 20px;
+}

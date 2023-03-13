@@ -1,0 +1,31 @@
+@use "../abstracts" as *;
+
+.project {
+  //   > h2 {
+  //     padding: 20px 0;
+  //     border-bottom: 1px solid lightgray;
+  //     margin-bottom: 30px;
+  //   }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding
+
+    &__info {
+      margin: 10px 40px;
+
+      &__links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        > img {
+          max-height: 20px;
+          max-width: 20px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
