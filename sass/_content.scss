@@ -1,1 +1,11 @@
 @use "./uni" as *;
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+
+  > img {
+    height: auto;
+    max-width: 100%;
+  }
+}

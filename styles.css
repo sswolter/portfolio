@@ -77,3 +77,12 @@ h2 {
   font-style: italic;
   color: #a6bee4;
 }
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.content > img {
+  height: auto;
+  max-width: 100%;
+}
