@@ -1,0 +1,29 @@
+@use "./uni" as *;
+
+.landing {
+  display: block;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 20px;
+
+  &__container {
+    width: 50%;
+  }
+}
+
+h1 {
+  font-size: 26pt;
+  padding: 7px 0;
+}
+h2 {
+  font-size: 12pt;
+  padding-left: 7px;
+}
+
+#italic {
+  display: inline;
+  font-style: italic;
+  color: $light-blue;
+}

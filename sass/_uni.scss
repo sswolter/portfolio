@@ -1,0 +1,52 @@
+$body-font: "DM Sans", sans-serif;
+$heading-font: "DM Serif Display", serif;
+$main-font: "Inter", sans-serif;
+
+$cream: #fef7ee;
+$yellow: #fdb35d;
+$brown: #4a4235;
+$grey: #b5b5b5;
+$blue: #879fc6;
+$light-blue: #a6bee4;
+
+%border-style {
+  border: dotted 2px lightgray;
+  border-radius: 7px;
+  margin-bottom: 7px;
+}
+
+* {
+  font-family: $main-font;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: $grey;
+}
+
+.wrapper {
+  background-color: $cream;
+  color: $brown;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll {
+  //   overflow: scroll;
+  width: 90%;
+  height: 90%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.inner-wrapper {
+  @extend %border-style;
+  padding: 20px;
+}
+
+p {
+  font-size: 14px;
+}
