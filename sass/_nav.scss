@@ -1,20 +1,20 @@
 @use "./uni" as *;
 
 .navbar {
-  @extend %border-style;
+  // @extend %border-style;
 
   &__menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 10px 0;
 
     &__link {
+      padding: 10px;
     }
   }
 }
 
 a {
   font-size: 14px;
-  text-decoration: none;
 }

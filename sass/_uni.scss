@@ -1,6 +1,5 @@
-$body-font: "DM Sans", sans-serif;
-$heading-font: "DM Serif Display", serif;
-$main-font: "Inter", sans-serif;
+$heading-font: Georgia, "Times New Roman", Times, serif;
+$main-font: "Chivo", sans-serif;
 
 $cream: #fef7ee;
 $yellow: #fdb35d;
@@ -9,8 +8,13 @@ $grey: #b5b5b5;
 $blue: #879fc6;
 $light-blue: #a6bee4;
 
+$cream: #fdf9eb;
+$orange: #feebd8;
+$brown: #cb997e;
+$pink: #f4acb8;
+
 %border-style {
-  border: dotted 2px lightgray;
+  border: dotted 2px $brown;
   border-radius: 7px;
   margin-bottom: 7px;
 }
@@ -19,8 +23,8 @@ $light-blue: #a6bee4;
   font-family: $main-font;
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  color: $grey;
+  background-color: $cream;
+  color: $brown;
 }
 
 .wrapper {
@@ -37,16 +41,29 @@ $light-blue: #a6bee4;
   width: 90%;
   height: 90%;
 }
-
+ul {
+  display: flex;
+}
 li {
   list-style-type: none;
 }
 
 .inner-wrapper {
-  @extend %border-style;
-  padding: 20px;
+  // @extend %border-style;
+  // padding: 20px;
+  // padding: 0 10px;
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
 }
