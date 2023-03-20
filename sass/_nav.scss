@@ -1,20 +1,21 @@
-@use "./uni" as *;
+@use "./base" as *;
 
 .navbar {
-  // @extend %border-style;
-
+  // position: fixed;
+  // top: 500px;
   &__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-
-    &__link {
-      padding: 10px;
-    }
+    @include default-flex(flex, row, space-evenly, center);
+    font-family: $main-font;
+    margin-bottom: 90px;
   }
 }
 
-a {
-  font-size: 14px;
+@media (max-width: $breakpoint-small) {
+  .navbar {
+    &__menu {
+      > li {
+        margin: 0 2px;
+      }
+    }
+  }
 }
