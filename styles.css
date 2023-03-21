@@ -98,16 +98,6 @@ a:hover {
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 400px) {
-  .project {
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 900px) {
-  .project {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 .item {
   display: flex;
   flex-direction: column;
@@ -116,7 +106,7 @@ a:hover {
 }
 .item__img {
   border-radius: 5px;
-  max-width: 150px;
+  max-width: 360px;
 }
 .item__heading {
   font-size: 18px;
@@ -142,6 +132,16 @@ a:hover {
   padding: 10px 20px;
 }
 
+@media (max-width: 400px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 900px) {
+  .project {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .skills {
   display: flex;
   flex-direction: column;

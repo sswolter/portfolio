@@ -8,23 +8,12 @@
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: $breakpoint-small) {
-  .project {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: $breakpoint-large) {
-  .project {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 .item {
   @include default-flex(flex, column, space-between, center);
   &__img {
     @extend %img-responsive;
     border-radius: 5px;
-    max-width: 150px;
+    max-width: 360px;
   }
 
   &__heading {
@@ -46,5 +35,17 @@
       @include default-flex(flex, row, center, center);
       padding: 10px 20px;
     }
+  }
+}
+
+@media (max-width: $breakpoint-small) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .project {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
