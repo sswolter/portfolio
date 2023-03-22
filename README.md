@@ -1,5 +1,5 @@
 # portfolio-website
 
-personal portfolio
+personal portfolio created as first project for nology
 
-link
+https://sswolter.github.io/
