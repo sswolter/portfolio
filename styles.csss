@@ -10,7 +10,6 @@
   background-color: #fffaf0;
   color: #7d9ad5;
   list-style-type: none;
-  scroll-behavior: smooth;
 }
 
 h1,
@@ -49,9 +48,6 @@ a:hover {
   p {
     max-width: 300px;
   }
-}
-.navbar {
-  scroll-behavior: smooth;
 }
 .navbar__menu {
   display: flex;
@@ -171,86 +167,56 @@ a:hover {
 }
 .skills__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   font-size: 50px;
-  gap: 1.5rem;
-}
-.skills__container_item {
-  font-size: 12px;
+  gap: 4rem;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 400px) {
   .skills__container {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 4rem;
+    gap: 1.5rem;
   }
 }
-@media (min-width: 600px) {
-  .skills__container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 4rem;
-  }
-}
-.skill_item {
+.info {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
-
-.skill_label {
-  font-size: 10px;
-  text-align: center;
-  font-weight: bolder;
-  padding-top: 5px;
-}
-
-.about {
+.info > .about {
   text-align: justify;
   padding: 50px 0 100px 0;
   border-bottom: 1px dotted #7d9ad5;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-@media (min-width: 600px) {
-  .about {
-    flex-direction: row;
-  }
-}
-.about__desc {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.about__desc > p {
-  padding: 10px 10px;
-  max-width: 350px;
+.info > .about > p {
+  padding: 10px 0;
+  word-wrap: normal;
 }
-
-.contact {
+.info > .contact {
   padding: 200px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contact > h5 {
+.info > .contact > h5 {
   padding: 50px 0;
 }
-.contact > ul {
+.info > .contact > ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.contact > ul > li {
+.info > .contact > ul > li {
   padding: 30px;
 }
 
 #me {
-  max-width: 200px;
-  height: auto;
-  padding-bottom: 20px;
+  width: 100px;
 }

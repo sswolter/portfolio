@@ -1,31 +1,40 @@
 @use "./base" as *;
 
-.info {
-  @include default-flex(flex, column, space-between, center);
-  > .about {
-    text-align: justify;
-    padding: 50px 0 100px 0;
-    border-bottom: 1px dotted $blue;
+.about {
+  text-align: justify;
+  padding: 50px 0 100px 0;
+  border-bottom: 1px dotted $blue;
+  @include default-flex(flex, column, space-around, center);
 
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
+
+  &__desc {
     @include default-flex(flex, column, center, center);
-
     > p {
-      padding: 10px 0;
-      word-wrap: normal;
+      padding: 10px 10px;
+      max-width: 350px;
     }
   }
-  > .contact {
-    padding: 200px 0;
-    @include default-flex(flex, column, center, center);
-    > h5 {
-      padding: 50px 0;
-    }
+}
+.contact {
+  padding: 200px 0;
+  @include default-flex(flex, column, center, center);
+  > h5 {
+    padding: 50px 0;
+  }
 
-    > ul {
-      @include default-flex(flex, row, center, center);
-      > li {
-        padding: 30px;
-      }
+  > ul {
+    @include default-flex(flex, row, center, center);
+    > li {
+      padding: 30px;
     }
   }
+}
+
+#me {
+  max-width: 200px;
+  height: auto;
+  padding-bottom: 20px;
 }
