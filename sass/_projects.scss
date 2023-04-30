@@ -34,6 +34,14 @@
     > li {
       @include default-flex(flex, row, center, center);
       padding: 10px 20px;
+
+      > a {
+        border-bottom: 2px solid $cream;
+      }
+
+      > a:hover {
+        border-bottom: 2px solid;
+      }
     }
   }
 }

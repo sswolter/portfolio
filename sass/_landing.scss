@@ -1,13 +1,14 @@
 @use "./base" as *;
 .landing {
   background-color: $cream;
+  user-select: none;
+
   &__container {
     min-height: 90vh;
     @include default-flex(flex, column, center, center);
 
     > h1 {
       font-size: 60px;
-      // letter-spacing: 3px;
       font-family: $landing-font;
       font-weight: 700;
       > #italic {

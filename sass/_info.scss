@@ -1,7 +1,7 @@
 @use "./base" as *;
 
 .about {
-  text-align: justify;
+  text-align: left;
   padding: 50px 0 100px 0;
   border-bottom: 1px dotted $blue;
   @include default-flex(flex, column, space-around, center);
@@ -12,9 +12,12 @@
 
   &__desc {
     @include default-flex(flex, column, center, center);
+    padding-top: 50px;
     > p {
       padding: 10px 10px;
       max-width: 350px;
+      line-height: 130%;
+      word-spacing: 5px;
     }
   }
 }
@@ -29,12 +32,16 @@
     @include default-flex(flex, row, center, center);
     > li {
       padding: 30px;
+      transition: transform 0.3s ease-in-out;
+    }
+    > li:hover {
+      transform: translateY(-5px);
     }
   }
 }
 
-#me {
-  max-width: 200px;
-  height: auto;
-  padding-bottom: 20px;
+#sub {
+  max-width: 300px;
+  margin: auto;
+  @extend %img-responsive;
 }
