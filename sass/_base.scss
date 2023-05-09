@@ -3,7 +3,7 @@
 @use "./breakpoints" as *;
 @use "./mixins" as *;
 
-$heading-font: Georgia, "Times New Roman", Times, serif;
+$heading-font: "Tinos", Georgia, "Times New Roman", Times, serif;
 $main-font: "Chivo", sans-serif;
 $landing-font: "Rubik", sans-serif;
 
@@ -38,7 +38,6 @@ h6 {
 }
 
 .wrapper {
-  // margin: 0px 20px;
   padding: 0px 20px;
   @include default-flex(flex, column, center, center);
 }

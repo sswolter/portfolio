@@ -12,13 +12,13 @@
   @include default-flex(flex, column, space-between, center);
   &__img {
     @extend %img-responsive;
-    border-radius: 5px;
+    // border-radius: 5px;
     max-width: 360px;
   }
 
   &__heading {
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding: 30px 0 15px 0;
   }
 
@@ -56,4 +56,25 @@
   .project {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.img-con {
+  position: relative;
+  @extend %img-responsive;
+  // border-radius: 5px;
+  max-width: 360px;
+}
+.img-con:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(141, 172, 234, 0.2);
+  transition: all 0.3s linear;
+}
+.img-con:hover:before {
+  background: none;
 }

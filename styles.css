@@ -1,4 +1,4 @@
-#sub, .item__img {
+#sub, .item__img, .img-con {
   width: 100%;
   height: auto;
 }
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Tinos", Georgia, "Times New Roman", Times, serif;
   text-align: center;
   font-size: 18px;
 }
@@ -122,12 +122,11 @@ a:hover {
   align-items: center;
 }
 .item__img {
-  border-radius: 5px;
   max-width: 360px;
 }
 .item__heading {
   font-size: 18px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding: 30px 0 15px 0;
 }
 .item__desc {
@@ -165,6 +164,27 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+.img-con {
+  position: relative;
+  max-width: 360px;
+}
+
+.img-con:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(141, 172, 234, 0.2);
+  transition: all 0.3s linear;
+}
+
+.img-con:hover:before {
+  background: none;
+}
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -270,3 +290,5 @@ a:hover {
   max-width: 300px;
   margin: auto;
 }
+
+/*# sourceMappingURL=styles.css.map */
